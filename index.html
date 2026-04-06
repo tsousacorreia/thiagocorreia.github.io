@@ -2,14 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiago Correia | Redes e Cibersegurança</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0f172a;
+      background: #0f172a;
       color: white;
+      line-height: 1.6;
     }
 
     header {
@@ -18,14 +20,31 @@
       background: #020617;
     }
 
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 28px;
     }
 
-    header p {
-      margin: 10px 0;
-      color: #94a3b8;
+    h2 {
+      color: #38bdf8;
+      margin-top: 30px;
+    }
+
+    p {
+      color: #cbd5f5;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .buttons {
@@ -34,22 +53,22 @@
 
     .buttons a {
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 10px 15px;
       margin: 5px;
       border-radius: 5px;
-      background-color: #2563eb;
+      background: #2563eb;
       color: white;
       display: inline-block;
     }
 
     .buttons a:hover {
-      background-color: #1d4ed8;
+      background: #1d4ed8;
     }
 
-    iframe {
-      width: 100%;
-      height: 80vh;
-      border: none;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
@@ -66,7 +85,48 @@
   </div>
 </header>
 
-<iframe src="Profile.pdf"></iframe>
+<div class="container">
+
+  <div class="card">
+    <h2>Sobre mim</h2>
+    <p>
+      Estudante de Sistemas de Informação com foco em Redes de Computadores e Cibersegurança.
+      Possuo experiência profissional no setor público, atuando com sistemas críticos, disciplina operacional e trabalho em equipe.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Experiência</h2>
+
+    <p><strong>Governo do Estado de São Paulo</strong> — Servidor público</p>
+    <p>2018 - Atual</p>
+    <p>Atuação com sistemas críticos, relatórios operacionais, trabalho sob pressão e cumprimento de protocolos.</p>
+
+    <p><strong>Olímpia Escola de Futebol</strong> — Professor</p>
+    <p>2014 - 2018</p>
+
+    <p><strong>Academia Acqua</strong> — Instrutor de Natação</p>
+    <p>2013 - 2016</p>
+  </div>
+
+  <div class="card">
+    <h2>Formação</h2>
+
+    <p><strong>Estácio</strong> — Sistemas de Informação (2027)</p>
+    <p><strong>ETEC</strong> — Desenvolvimento de Sistemas (2024)</p>
+    <p><strong>Universidade de Santo Amaro</strong> — Educação Física</p>
+  </div>
+
+  <div class="card">
+    <h2>Competências</h2>
+
+    <p>• Redes de Computadores</p>
+    <p>• Cibersegurança</p>
+    <p>• Banco de Dados (MySQL)</p>
+    <p>• Análise de Sistemas</p>
+  </div>
+
+</div>
 
 </body>
 </html>
